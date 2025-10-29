@@ -9,11 +9,6 @@ document.getElementById("addBtn").onclick = function()
   let category = document.getElementById("expenseCategory").value;
   let date = document.getElementById("expenseDate").value;
 
- 
-  if (name == "" || amount == "" || category == "" || date == "") {
-    return;
-  }
-
   
   let newExpense = document.createElement("div");
   newExpense.className = "expense-box";
@@ -37,4 +32,5 @@ document.getElementById("addBtn").onclick = function()
   document.getElementById("expenseCategory").value = "";
   document.getElementById("expenseDate").value = "";
 }
+
 
