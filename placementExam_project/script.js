@@ -1,6 +1,7 @@
 
 
-document.getElementById("addBtn").onclick = function() {
+document.getElementById("addBtn").onclick = function() 
+{
 
   
   let name = document.getElementById("expenseName").value;
@@ -16,7 +17,7 @@ document.getElementById("addBtn").onclick = function() {
   
   let newExpense = document.createElement("div");
   newExpense.className = "expense-box";
-  newExpense.innerHTML = name + " - ₹" + amount + "<br>" + category + " | " + date;
+  newExpense.innerHTML = name + " - ₹" + amount + "Category:" + category + " Date: " + date;
 
   
   let delButton = document.createElement("button");
@@ -36,3 +37,4 @@ document.getElementById("addBtn").onclick = function() {
   document.getElementById("expenseCategory").value = "";
   document.getElementById("expenseDate").value = "";
 }
+
